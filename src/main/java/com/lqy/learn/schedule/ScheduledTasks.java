@@ -24,7 +24,7 @@ class ScheduledTasks {
             new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
     @Scheduled(fixedRate = 2000)
-    public void reportCurTime(){
+    public void reportCurTime() {
         System.out.println("start");
         try {
             Thread.sleep(2000);

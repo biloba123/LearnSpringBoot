@@ -20,11 +20,11 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 @RestController
 public class GreetingController {
-    private final static String FORMAT_GREETING="hello, %s";
-    private final AtomicInteger mId=new AtomicInteger();
+    private final static String FORMAT_GREETING = "hello, %s";
+    private final AtomicInteger mId = new AtomicInteger();
 
     @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "world")String name){
+    public Greeting greeting(@RequestParam(value = "name", defaultValue = "world") String name) {
         return new Greeting(mId.incrementAndGet(), String.format(FORMAT_GREETING, name));
     }
 }

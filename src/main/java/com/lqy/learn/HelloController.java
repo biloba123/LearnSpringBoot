@@ -22,8 +22,9 @@ public class HelloController {
     private User mUser;
 
     @RequestMapping("/hello")
-    public String index(){
-        return "hello "+mUser;
+    public String index() {
+        throw new RuntimeException("errorrrrrr");
+//        return "hello " + mUser;
     }
 
 }

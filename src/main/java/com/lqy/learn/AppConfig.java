@@ -18,8 +18,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
     @Bean
-    public User user(){
-        User user=new User();
+    public User user() {
+        User user = new User();
         user.setUsername("biloba");
         return user;
     }
